@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>防災クイズラリー</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>防災クイズラリー</h1>
+
+    <section class="caution">
+      <h2>⚠️注意⚠️<br>スマートフォンを見るときは立ち止まってください。<br>思わぬ事故につながる可能性があります。</h2>
+    </section>
+
+    <section class="quiz-number">
+      <h2>クイズ番号入力</h2>
+      <input type="text" id="quiz-id" placeholder="クイズ番号を入力">
+      <button onclick="loadQuiz()">クイズを表示</button>
+    </section>
+
+    <section class="quiz">
+      <h2>クイズ</h2>
+      <p id="question"></p>
+      <ul id="choices"></ul>
+      <button id="answer-button" onclick="checkAnswer()">回答する</button>
+    </section>
+
+    <section class="stamp-section">
+      <h2>スタンプ</h2>
+      <div id="stamp-result"></div>
+    </section>
+
+    <section class="map-section">
+      <h2>マップ</h2>
+    </section>
+
+    <button onclick="resetStampData()">クイズ終了</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
