@@ -31,6 +31,20 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.map-section img {
+text-align: center;
+max-width: 50vw;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 768px) {
+  .map-section img {
+    text-align: center;
+    max-width: 80vw;
+    max-height: 80vh;
+  }
+}
+
 h2 {
   color: #333;
 }
